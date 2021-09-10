@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="tinymce.min.js" referrerpolicy="origin"></script>
+</head>
+<body>
+  <textarea id="textEditor">
+    Welcome to TinyMCE!
+  </textarea>
+  <script>
+    tinymce.init({
+      selector: '#textEditor',
+      height: 400,
+      plugins: 'advlist lists link code preview searchreplace wordcount media table emoticons image imagetools',
+      toolbar: 'undo redo bold italic | styleselect | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image media | forecolor backcolor emoticons | code preview searchreplace table',
+      toolbar_mode: 'scrolling',
+    });
+  </script>
+</body>
+</html>
